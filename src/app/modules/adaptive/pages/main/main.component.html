@@ -1,7 +1,7 @@
 <ng-container *ngIf="(isMobile$|async); else desktop">
-    <h1 style="color: red">Mobile</h1>
+    <app-adaptive-main-mobile></app-adaptive-main-mobile>
 </ng-container>
 
 <ng-template #desktop>
-    <h1 style="color: blue">Desktop</h1>
+    <app-adaptive-main-desktop></app-adaptive-main-desktop>
 </ng-template>
